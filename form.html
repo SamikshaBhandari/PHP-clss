@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body {
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    .simple-form {
+      max-width: 300px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-top: 5px;
+      padding: 5px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 5px 15px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <form class="simple-form" action="data.php" method="POST">
+      <h3>Contact Form</h3>
+
+      <label>Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label>Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label>Message:</label>
+      <textarea name="message" id="message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
